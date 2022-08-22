@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/IvanJonse/LandingPage/static/css/main.5bd1f912.css",
+    "main.js": "/IvanJonse/LandingPage/static/js/main.6395e042.js",
+    "static/js/787.ca822a80.chunk.js": "/IvanJonse/LandingPage/static/js/787.ca822a80.chunk.js",
+    "static/media/bg.jpg": "/IvanJonse/LandingPage/static/media/bg.1c04b766c2764393f0c4.jpg",
+    "static/media/Graphik-Medium-Web.ttf": "/IvanJonse/LandingPage/static/media/Graphik-Medium-Web.eb344a59ff075ce3dbfe.ttf",
+    "static/media/note.jpg": "/IvanJonse/LandingPage/static/media/note.7ce5a67f1f3925d0d5cf.jpg",
+    "static/media/Graphik-Black-Web.woff": "/IvanJonse/LandingPage/static/media/Graphik-Black-Web.0d42ac9eb03c524c273e.woff",
+    "static/media/Graphik-Regular-Web.woff": "/IvanJonse/LandingPage/static/media/Graphik-Regular-Web.f60715ef64f49ac79019.woff",
+    "static/media/Graphik-Black-Web.woff2": "/IvanJonse/LandingPage/static/media/Graphik-Black-Web.fb19883e573571cd3470.woff2",
+    "static/media/Graphik-Regular-Web.woff2": "/IvanJonse/LandingPage/static/media/Graphik-Regular-Web.14b6085903d31b2fe601.woff2",
+    "static/media/Bitmap.jpg": "/IvanJonse/LandingPage/static/media/Bitmap.2a7fa0f610dc93356576.jpg",
+    "static/media/phone.jpg": "/IvanJonse/LandingPage/static/media/phone.e0fd4d6737015128fa7b.jpg",
+    "static/media/logo.svg": "/IvanJonse/LandingPage/static/media/logo.e2e3a5a6c90f901cd9f2449d732570c7.svg",
+    "index.html": "/IvanJonse/LandingPage/index.html",
+    "static/media/shape.svg": "/IvanJonse/LandingPage/static/media/shape.0add192974c815ad4a011df7167cfc91.svg",
+    "static/media/arrow.svg": "/IvanJonse/LandingPage/static/media/arrow.7b962004fd7702516f6b605c0c67bf7a.svg",
+    "static/media/menu.svg": "/IvanJonse/LandingPage/static/media/menu.47ac6afb2ace4b81fde084e9d63115e6.svg",
+    "main.5bd1f912.css.map": "/IvanJonse/LandingPage/static/css/main.5bd1f912.css.map",
+    "main.6395e042.js.map": "/IvanJonse/LandingPage/static/js/main.6395e042.js.map",
+    "787.ca822a80.chunk.js.map": "/IvanJonse/LandingPage/static/js/787.ca822a80.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bd1f912.css",
+    "static/js/main.6395e042.js"
+  ]
+}
