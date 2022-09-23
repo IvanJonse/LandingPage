@@ -1,0 +1,193 @@
+@import 'fonts.sass'
+
+ul, li, h1, h2, h3, h4, p 
+  padding: 0
+  margin: 0
+
+.App
+  height: 100vh
+  background-color:#F2F2F2
+  font-family: 'GraphikLCG', sans-serif 
+  scroll-behavior: smooth
+  height: 100vh
+  overflow-y: scroll
+
+.container
+  display: flex
+  margin: 0 64px
+ 
+.wrapper
+  margin-bottom: 228px
+  width: 904px
+  display: block
+  z-index: 4
+  color: #1B1B1B
+  text-align: left
+  margin-top: 45px
+  margin-left: auto
+  box-sizing: border-box
+
+.harangue 
+  display: block
+  &__title
+    font-family: 'Graphik-Black', sans-serif
+    font-size: 48px
+    font-weight: 800
+  &__subtitle
+    margin-top: 16px
+    font-family: 'Graphik-Regular', sans-serif
+    font-size: 24px
+    font-weight: 500
+    line-height: 24px
+  &__descr
+    width: 100%
+    line-height: 24px
+    margin-top: 64px
+    font-family: 'Graphik-Regular', sans-serif
+    font-size: 16px
+    display: block
+    box-sizing: border-box
+
+.grid
+  display: block
+  margin-top: 80px
+  
+.layout
+  margin-top: 48px
+  font-family: 'Graphik-Regular', sans-serif
+  font-size: 24px
+  font-weight: 600
+  line-height: 32px
+  &__title
+    margin-top: 36px
+    margin-bottom: 32px
+  &__descr
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 90px
+    &__item
+      font-size: 14px
+      color:#7D7D7D
+      text-align: center
+      gap: 95px
+      font-family: 'Graphik-Regular', sans-serif
+      font-weight: 400
+      &:nth-child(3)
+        margin-left: 120px
+      &__count
+        text-align: center
+        margin-top: 8px
+        font-family: 'Graphik-Regular', sans-serif
+        font-size: 24px
+        font-weight: 500
+        line-height: 32px
+        color: #1B1B1B
+  &__image
+    margin-top: 48px
+    margin-bottom: 22px
+    width: 100%
+    height: auto
+    display: block   
+    &__item
+      margin: auto
+      height: auto
+      display: block 
+  
+.ui
+  display: block
+  margin-top: 80px
+  &__buttonWrap
+    display: flex 
+    flex-direction: row
+    margin-bottom: 64px
+    &__wrap
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+
+
+@media screen and (max-width: 1300px)
+  .layout__image__item
+    max-width: 700px
+
+@media screen and (max-width: 1060px)
+  .container
+    margin: 0 16px
+  .wrapper 
+    margin: 0
+    margin-top: 100px
+    margin-left: 40px
+
+@media screen and (max-width: 992px)
+  .wrapper 
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0
+    margin-top: 100px
+
+  .layout
+    &__title
+      text-align: center
+    &__image
+      margin: auto
+      margin-top: 14px
+      max-width: 350px
+      &__item
+        max-width: 350px
+    &__descr 
+      display: block
+      margin: auto
+      &__item
+        &:nth-child(3)
+          margin: 15px 0
+  
+  .harangue 
+    &__title
+      font-size: 38px
+    &__descr
+      max-width: 400px
+
+  .ui
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__buttonWrap
+      flex-direction: column 
+      margin-bottom: 44px
+      &__wrap
+        &:not(:last-child)
+          margin-bottom: 24px
+        
+    &__btn
+      margin-left: 0
+    &__form 
+      flex-direction: column
+
+@media screen and (max-width: 600px)
+
+  .harangue__title
+    font-size: 28px
+
+  .container
+    margin: 0 14px
+
+  .harangue 
+    &__descr
+      display: block
+      box-sizing: border-box
+
+      max-width: 300px
+  .layout
+    &__image
+      margin: auto
+      max-width: 300px
+      &__item
+        max-width: 300px
+
+@media screen and (max-width: 328px)
+
+   .layout__image__item
+      max-width: 280px
+

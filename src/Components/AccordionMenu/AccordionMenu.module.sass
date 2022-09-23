@@ -1,0 +1,86 @@
+.accordion
+    margin-bottom: 160px
+    width: 100%
+    height: 100%
+    &__item
+        height: 63px
+        width: 100%
+        display: block
+        position: relative
+        cursor: pointer
+        transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+        &::before
+            position: absolute
+            content: ''
+            height: 1px
+            width: inherit
+            background: #3E29E3
+            bottom: 0
+        &__active
+            height: 293px
+            display: block
+            position: relative
+        &__wrap
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            height: 63px
+            position: relative
+        &__title
+            font-size: 16px
+            transition: color .1s ease-out
+            position: absolute
+            bottom: 24px
+            color:#7D7D7D  
+            &__active
+                color: #3E29E3
+                &:hover
+                    color: #3E29E3
+        &__text
+            line-height: 24px
+            margin: 0px 0 30px 0
+            text-align: left
+            width: 100%
+            opacity: 0
+            transition: all 150ms 
+            &__active
+                opacity: 1
+        &__btn
+            cursor: pointer
+            width: 9px
+            height: 6px
+            display: flex
+            justify-content: center
+            margin-left: auto
+            transition: .3s transform ease
+            &:before,
+            &:after
+                position: absolute
+                content: ''
+                height: 6.3px
+                width: 2.2px
+                background: #3E29E3
+                margin-right: 3px
+            &:before
+                transform: rotate(45deg)
+                margin-left: 6px
+            &:after
+                transform: rotate(-45deg)
+            &__active
+                transform: rotate(-180deg)
+
+.accordion__item:hover .accordion__item__title
+    color: #1B1B1B
+.accordion__item__active:hover .accordion__item__title
+    color: #3E29E3
+
+
+
+@keyframes fadeIn
+    0%
+        opacity: 0 
+    100%
+        opacity: 1
+        
+        

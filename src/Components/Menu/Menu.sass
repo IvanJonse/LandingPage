@@ -1,0 +1,198 @@
+.App__isOpen
+  background: url('../../assets/bg.jpg')
+  background-position: center top
+  background-size: cover
+  background-repeat: no-repeat
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  height: 100vh
+  z-index: 5
+  padding: 8px
+  box-sizing: border-box
+  &__close
+    z-index: 9999
+    cursor: pointer
+    margin-left: auto
+    width: 27px
+    height: 27px
+    padding: 0
+    padding: 1px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    &:before,
+    &:after
+        position: absolute
+        content: ''
+        height: 35px
+        width: 3px
+        border-radius: 3px
+        transform: translate(-50%, -50%)
+        background: #ffffff
+        
+    &:before
+        transform: rotate(45deg)
+        margin-left: 2.2px
+    &:after
+        transform: rotate(-45deg)
+        margin-left: 2.2px
+  &__left
+    margin-right: auto
+    background: #ffffffd3
+    width: 60%
+    height: 100%
+    display: flex
+    font-family: 'GraphikLCG', sans-serif
+    &__img
+      padding-top: 24px
+      margin-left: 50px
+      display: block
+      max-width: 56px
+      min-width: 56px
+      max-height: 56px
+      min-height: 56px   
+      &__item
+        display: block
+        max-width: 56px
+        min-width: 56px
+        max-height: 56px
+        min-height: 56px
+        object-fit: cover   
+    &__inner
+      padding-top: 43px
+      text-align: left
+      margin: 0 auto  
+      margin-left: 64px  
+      padding-right: 50px
+      color: #1B1B1B
+    &__title
+      font-family: "Graphik-Regular"
+      font-weight: 500
+      color:#7D7D7D
+      font-size: 14px
+      margin-bottom: 60px
+    &__main
+      font-family: 'Graphik-Black', sans-serif
+      font-size: 32px
+      font-weight: 800
+      line-height: 40px
+    &__descr
+      font-family: "Graphik-Regular"
+      max-width: 600px
+      margin: 24px 0
+      font-weight: 500
+      font-size: 16px
+      color: #1B1B1B
+      line-height: 24px
+    &__phone
+      font-family: "Graphik-Medium"
+      font-size: 18px
+      text-decoration: none
+      color: #1B1B1B
+      font-weight: 400
+      margin-top: 18px
+    &__link
+      text-decoration: none
+      position: absolute
+      bottom: 51px
+      display: flex
+      align-items: center
+      margin-top: auto
+      color: #3E29E3
+      word-break: break-word
+      &__img
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        max-width: 48px
+        min-width: 48px
+        max-height: 48px
+        min-height: 48px
+        background: #ffffff
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08)
+        &__item
+          display: flex
+          align-items: center
+          justify-content: center
+      &__text
+        margin-left: 24px
+        font-family: "Graphik-Regular"
+        font-weight: 600
+        display: block
+        hyphens: auto
+        word-break: break-word
+        font-size: 16px 
+        
+@media screen and (max-width: 992px)
+
+    .App__isOpen
+        position: absolute
+        overflow: auto
+        &__left 
+          width: auto
+          display: block
+          &__link
+            left: 0
+            right: 0
+            margin: auto
+            justify-content: center
+        &__img
+            margin-left: 22px
+        &__inner
+            margin-left: 26px
+
+    .App__isOpen__close
+        margin-top: 24px
+        margin-right: 26px
+        &:before,
+        &:after
+            background: #272727
+
+
+@media screen and (max-width: 420px)
+
+    .App__isOpen__left
+      &__link
+        margin: auto
+        align-items: center
+        left: 0
+        right: 0
+        margin-top: 20px
+        bottom: 14%
+        &__text
+          width: 160px
+       
+@media screen and (max-width: 380px)
+    .App__isOpen__left
+      padding-bottom: 20px
+
+@media screen and (max-height: 800px)
+
+    .App__isOpen__left
+        height: auto
+        &__link
+            position: relative
+            margin: auto
+            margin-top: 90px
+
+
+
+@media screen and (max-width: 375px)
+
+    .App__isOpen__left__link  
+        margin-top: 24px
+        
+@media screen and (max-width: 360px)
+
+    .App__isOpen__left__link  
+        margin-top: 33px
+
+
+@media screen and (max-width: 328px)
+
+    .App__isOpen__close
+        margin-right: 7px

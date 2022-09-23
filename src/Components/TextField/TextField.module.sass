@@ -1,0 +1,175 @@
+.ui__form
+  cursor: pointer    
+  display: flex
+  align-items: center 
+  position: relative
+  height: 56px
+  &__input
+    height: 35px
+    font-family: inherit
+    font-size: 16px
+    outline: none
+    box-sizing: border-box
+    max-height: 28px
+    width: 280px
+    max-width: 280px
+    min-width: 280px
+    border: 0
+    background: none
+    border-bottom: 1px solid #AEADAE
+    transition: .3s ease-in
+    transform: translateY(0px)
+    padding-bottom: 12px
+    &__click
+      border-bottom: 3px solid #3E29E3
+    &__hover
+      &:hover
+        border-bottom: 1px solid #3E29E3
+    &__error
+      border-bottom: 3px solid #E80F3B
+    &__span
+      width: 280px
+      max-width: 280px
+      min-width: 280px
+      height: 28px
+      color:#1B1B1B
+      position: absolute
+      bottom: 0
+      margin: 12px 0
+      left: 0
+      font-size: 16px
+      pointer-events: none
+      transition: 0.3s
+      background: transparent
+      &__error
+        color: #E80F3B
+        
+.ui__form__input__click ~ .ui__form__input__span, 
+.ui__form__input ~ .ui__form__input__span__active
+  transform: translateY(-24px)
+  font-size: 12px
+  padding: 0 10px 0 2px
+  color: #7D7D7D
+
+.ui__form__input ~ .ui__form__input__span__error
+  color: #E80F3B
+
+.ui__btn 
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: "Graphik-Regular", sans-serif
+  font-weight: 500
+  font-size: 16px
+  margin-left: 20px
+  height: 56px
+  cursor: pointer
+  border: 0
+  outline: 0
+  width: 148px
+  color: #ffffff
+  border-radius: 32px
+  background: linear-gradient(45deg, #DD80ED 0%, #3D28E3 100%)
+  transition: opacity .3s ease-in
+  &:hover
+    &:before
+    opacity: 1
+    background: linear-gradient(225deg, #DD80ED 0%, #3D28E3 100%)
+  &:active
+    background: linear-gradient(206.57deg, #DD80ED 0%, #3D28E3 83.33%)
+    
+  &:disabled
+    opacity: .5
+    cursor: not-allowed
+
+.ui__select
+  font-family: "Graphik-Medium", sans-serif
+  font-weight: 400
+  display: block
+  position: absolute
+  top: 43px
+  left: 0
+  box-sizing: border-box
+  width: 280px
+  max-width: 280px
+  min-width: 280px  
+  height: 0
+  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms 
+  background: #ffffff
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08)
+  animation: fadeIn 1s 
+  &__item
+      display: flex
+      align-items: center
+      padding-left: 24px
+      color: #1B1B1B
+      font-size: 16px
+      height: 40px
+      transition: .2s background ease
+      animation: fadeIn .8s 
+      &:hover
+          color: #ffffff
+          background: #3D28E1
+  &__height
+    height: 168px
+  &__active
+      color: #3D28E1
+      &:hover
+          color: #3D28E1
+          background: none
+  &__btn
+      cursor: pointer
+      width: 9px
+      height: 6px
+      display: flex
+      justify-content: center
+      position: absolute
+      bottom: 12px
+      right: 1px
+      transition: .23s transform ease
+      &:before,
+      &:after
+          position: absolute
+          content: ''
+          height: 6.3px
+          width: 2.2px
+          background: #3E29E3
+          margin-right: 3px
+      &:before
+          transform: rotate(45deg)
+          margin-left: 6px
+      &:after
+          transform: rotate(-45deg)
+
+      &__active
+          transform: rotate(180deg)
+.errorMessage
+  position: absolute
+  top: 50px
+  left: 0
+  color: #E80F3B 
+  font-size: 14px
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+    
+  100%
+    opacity: 1
+    
+
+@media screen and (max-width: 992px) 
+  .ui
+    &__select
+      top: 28px
+    &__form
+      height: auto
+      flex-direction: column
+      &__input__span
+        top: -10px
+  .errorMessage
+    position: absolute
+    top: 36px
+    left: 0
+
+

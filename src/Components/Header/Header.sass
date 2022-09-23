@@ -1,0 +1,133 @@
+.App__header
+    position: sticky
+    top: 0
+    background: #F2F2F2
+    z-index: 99
+    box-sizing: border-box
+    display: block
+    width: 100%
+    height: 72px
+    &__inner
+      box-sizing: border-box
+      padding: 0 64px
+      height: 72px
+      display: flex
+      align-items: center
+    &__logo
+      width: 100%
+      display: flex
+      align-items: center
+      &__img
+        display: block
+        margin-top: 7px
+        max-width: 56px
+        min-width: 56px
+        max-height: 56px
+        min-height: 56px
+        &__item
+          display: block
+          max-width: 56px
+          min-width: 56px
+          max-height: 56px
+          min-height: 56px
+          object-fit: cover    
+      &__title
+        display: block
+        margin-left: 32px
+        text-align: left
+        line-height: 20px
+        font-size: 14px
+        font-family: "Graphik-Regular"
+        &__bold
+          color: #1B1B1B
+          font-weight: 700
+        &__small
+          font-weight: 400
+          color: #7D7D7D
+    &__menu
+      cursor: pointer
+      margin-left: auto
+      display: flex
+      align-items: center
+      max-width: 32px
+      min-width: 32px
+      max-height: 10px
+      min-height: 10px
+      &__item
+        max-width: 32px
+        min-width: 32px
+        max-height: 10px
+        min-height: 10px
+        object-fit: cover   
+.show-enter
+    z-index: 9999
+    opacity: 0
+    width: 60%
+    transform: translate3d(70vw, 0, 0)
+
+.show-enter-active
+    opacity: 1
+    transform: translateX(0)
+    transform: translate3d(0)
+    width: 0%
+    -webkit-transition: all .3s linear
+    -moz-transition: all .3s linear
+    transition: all .3s linear
+
+.show-exit
+    opacity: 1
+
+.show-exit-active
+    opacity: 0
+    transform: translate3d(70vw, 0, 0)
+    width: 60%
+    -webkit-transition: all .3s linear
+    -moz-transition: all .3s linear
+    transition: all .3s linear
+    
+@media screen and (max-width: 992px)
+    .App__header__inner  
+        padding: 0 16px
+
+    .App__isOpen
+        position: absolute
+        overflow: auto
+        &__left 
+        width: auto
+        display: block
+        &__img
+            margin-left: 22px
+        &__inner
+            margin-left: 26px
+
+    .App__isOpen__close
+        // margin-top: 24px
+        // margin-right: 26px
+        &:before,
+        &:after
+            background: #272727
+
+@media screen and (max-height: 800px)
+
+    .App__isOpen__left
+        height: auto
+        &__link
+            position: relative
+            margin: auto
+            margin-top: 100px
+
+@media screen and (max-width: 600px)
+
+    .App__header__logo__title
+        margin-left: 12px
+        display: block
+        word-break: break-all
+
+@media screen and (max-width: 328px)
+
+    .App__isOpen__close
+        margin-right: 7px
+
+    .layout__image__item
+        max-width: 280px
+

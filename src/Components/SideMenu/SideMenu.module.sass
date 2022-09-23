@@ -1,0 +1,32 @@
+.sideMenu
+  &__list
+    display: block
+    position: fixed
+    top: 216px
+    left: 64px
+    list-style: none
+    scroll-behavior: smooth
+    &__item
+      cursor: pointer
+      font-family: "Graphik-Medium"
+      font-weight: 400
+      list-style: none
+      font-size: 14px
+      margin-bottom: 16px
+      &:last-child
+        margin-bottom: 0
+      &__link
+        white-space: nowrap
+        color: #7D7D7D
+        transition: .1s color ease
+        text-decoration: none
+        &:hover
+          color: #1B1B1B
+        &__active
+          color: #3E29E3
+          &:hover
+            color: #3E29E3
+            
+@media screen and (max-width: 1200px)
+  .sideMenu__list
+    display: none

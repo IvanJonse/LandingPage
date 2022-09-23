@@ -1,0 +1,32 @@
+.ui__btn 
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: "Graphik-Regular", sans-serif
+  font-weight: 500
+  font-size: 16px
+  margin-left: 20px
+  height: 56px
+  min-height: 56px
+  cursor: pointer
+  border: 0
+  outline: 0
+  width: 148px
+  color: #ffffff
+  border-radius: 32px
+  background: linear-gradient(45deg, #DD80ED 0%, #3D28E3 100%)
+  transition: opacity .3s ease-in
+  &:hover
+    &:before
+    opacity: 1
+    background: linear-gradient(225deg, #DD80ED 0%, #3D28E3 100%)
+  &:active
+    background: linear-gradient(206.57deg, #DD80ED 0%, #3D28E3 83.33%)
+  &:disabled
+    opacity: .5
+    cursor: not-allowed
+
+@media screen and (max-width: 992px)
+  .ui__btn
+    margin-top: 40px
+    margin-left: 0 !important

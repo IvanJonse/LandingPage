@@ -1,0 +1,100 @@
+.ui
+  &__buttonWrap
+    &__wrap
+    &__item
+      display: flex
+      align-items: center
+      width: 285px
+      box-sizing: border-box
+      &:not(:last-child)
+        margin-bottom: 24px
+      &__box
+        outline: 0
+        width: 24px
+        min-width: 24px
+        max-width: 24px
+        height: 24px
+        min-height: 24px
+        max-height: 24px
+        display: flex
+        align-items: center
+        cursor: pointer
+        background: transparent
+        border: 2px solid #3E29E3
+        transition: .24s background ease-out
+        &:focus
+          outline: 0
+        &:disabled
+          cursor: not-allowed
+          border: 2px solid #AEADAE
+        &__activeRadio
+          display: flex
+          justify-content: center
+          align-items: center
+          -ms-user-select: none
+          -moz-user-select: none
+          -khtml-user-select: none
+          -webkit-user-select: none
+        &__activeCheck
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 24px
+          min-width: 24px
+          max-width: 24px
+          height: 24px
+          min-height: 24px
+          max-height: 24px  
+          background: #3E29E3
+          -ms-user-select: none
+          -moz-user-select: none
+          -khtml-user-select: none
+          -webkit-user-select: none
+        &__imgCheck
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 14px
+          min-width: 14px
+          maxn-width: 14px
+          height: 10px
+          min-height: 10px
+          max-height: 10px
+          object-fit: cover
+          animation: scale .16s ease-in
+        &__imgRadio
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 12px
+          min-width: 12px
+          maxn-width: 12px
+          height: 12px
+          min-height: 12px
+          max-height: 12px
+          object-fit: cover
+          animation: scale .3s ease
+      &__label
+          cursor: pointer
+          outline: 0
+          border: 0
+          margin-left: 18px
+          display: flex
+          align-items: center 
+          font-size: 16px
+          font-family: Graphik-Medium , sans-serif
+          font-weight: 500
+          color: #1B1B1B
+          &:disabled
+            cursor: not-allowed
+            color: rgba(27, 27, 27, .8)
+          &:focus
+            outline: 0
+
+@keyframes scale
+  0% 
+    
+    transform: scale(0)
+  100%
+    
+    transform: scale(1)
